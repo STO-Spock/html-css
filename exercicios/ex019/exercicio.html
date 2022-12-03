@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+        @font-face {
+            font-family: 'Local';
+            src: url(fontes/Raleway-Italic-VariableFont_wght.ttf);
+        }
+        h2#padrao{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2#google{
+            font-family: 'Silkscreen', cursive;
+        }
+        h2#local{
+            font-family: Local, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes em CSS</h1>
+    <h2 id="padrao">Podemos usar fontes padrões do sistema.</h2>
+    <h2 id="google">Podemos utilizar fontes do Google.</h2>
+    <h2 id="local">Podemos utilizar fontes locais que foram baixadas.</h2>
+</body>
+</html>

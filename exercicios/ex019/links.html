@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+        @font-face {
+            font-family: Legal;
+            src: url(fontes/Raleway-VariableFont_wght.ttf);
+        }
+
+        body{
+            background-color: aqua;
+        }
+        h1{
+            text-align: center;
+            font-family: Legal;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(255, 115, 0);
+            font-family: Legal;
+        }
+        a:hover{
+            text-shadow: 1px;
+        }
+        a::after{
+            content: ' [link]';
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Índice</h1>
+    <ul>
+        <li style=""><a href="exercicio.html" target="_blank">Exercício</a></li>
+        <li><a href="hover.html" target="_blank">Hover</a></li>
+        <li><a href="pseudoclasses.html" target="_blank">Pseudo-classes</a></li>
+    </ul>
+</body>
+</html>
