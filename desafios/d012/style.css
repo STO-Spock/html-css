@@ -2,10 +2,18 @@
 
 @font-face {
     font-family: 'Passion One', cursive;
-    src: url(fontes/PassionOne-Regular.ttf) format('truetype');
+    src: url('fontes/PassionOne-Regular.ttf') format('truetype');
+}
 
+@font-face {
     font-family: 'Sriracha', cursive;
-    src: url(fontes/Sriracha-Regular.ttf) format('truetype');
+    src: url('fontes/Sriracha-Regular.ttf') format('truetype');
+}
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
 }
 
 * {
@@ -25,13 +33,14 @@ header {
 }
 
 header h1 {
-    font-family: 'Passion One', cursive;
+    font-family: var(--fonte3);
     font-size: 10vw;
     padding-top: 50px;
 }
 
 header p {
     padding-bottom: 50px;
+    font-family: var(--fonte1);
 }
 
 header a {
@@ -40,20 +49,78 @@ header a {
     font-weight: bolder;
 }
 
-section {
+header a:hover {
+    text-decoration: underline;
+}
 
+section {
+    font-size: 3.5vw;
+    line-height: 2em;
+    padding-left: 30px;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
 }
 
 section#sec-dois {
     background: url(imagens/background001.jpg) center center fixed;
     background-size: cover;
     position: relative;
+    font-size: 3.5vw;
+    line-height: 2em;
+    padding-left: 30px;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%);
 }
 
 section#sec-dois p#p-dois {
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.301);
+    background-color: rgba(0, 0, 0, 0.199);
     margin: 50px 0px 50px 20px;
     color: white;
-    font-size: 32px;
+    padding: 5px;
+}
+
+section#sec-cinco {
+    background: url(imagens/background002.jpg) center center fixed;
+    background-size: cover;
+    position: relative;
+    font-size: 3.5vw;
+    line-height: 2em;
+    padding-left: 30px;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%);
+}
+
+section#sec-cinco p#p-cinco {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.39);
+    margin: 50px 0px 50px 20px;
+    color: white;
+    padding: 5px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    font-family: var(--fonte1);
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
