@@ -62,9 +62,8 @@ section {
 }
 
 section#sec-dois {
-    background: url(imagens/background001.jpg) center center fixed;
+    background: url(imagens/background001.jpg) right center fixed;
     background-size: cover;
-    position: relative;
     font-size: 3.5vw;
     line-height: 2em;
     padding-left: 30px;
@@ -82,9 +81,8 @@ section#sec-dois p#p-dois {
 }
 
 section#sec-cinco {
-    background: url(imagens/background002.jpg) center center fixed;
+    background: url(imagens/background002.jpg) right center fixed;
     background-size: cover;
-    position: relative;
     font-size: 3.5vw;
     line-height: 2em;
     padding-left: 30px;
